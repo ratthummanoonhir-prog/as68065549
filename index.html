@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BungJaa - Game Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">BungJaa</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#gallery">Games</a></li>
+            <li><a href="#download">Download</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>BungJaa</h1>
+            <p>เว็บไซต์สำหรับดาวน์โหลดเกมยอดนิยมอย่างปลอดภัย</p>
+            <a href="#gallery" class="btn">เลือกเกมเลย</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>ดาวน์โหลดเกมง่าย รวดเร็ว และครบทุกแนว</h2>
+        <p>
+            BungJaa เป็นเว็บไซต์สำหรับรวมเกมยอดฮิตให้คุณดาวน์โหลดได้สะดวก 
+            ไม่ว่าจะเป็นเกมแนว Action, Adventure หรือ Sandbox 
+            เราคัดสรรเกมคุณภาพมาให้คุณเลือกเล่นได้ในที่เดียว
+        </p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>เกมยอดนิยมในเว็บ</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="image/minecraft.jpg" alt="Minecraft">
+                <div class="overlay">Minecraft</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/gta.jpg" alt="GTA V">
+                <div class="overlay">GTA V</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/eldenring.jpg" alt="Elden Ring">
+                <div class="overlay">Elden Ring</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/valorant.jpg" alt="Valorant">
+                <div class="overlay">Valorant</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="cards">
+        <h2>เลือกดาวน์โหลดเกม</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Minecraft</h3>
+                <p>เกมแนว Sandbox สร้างโลกได้อิสระ</p>
+                <button>Download</button>
+            </div>
+            <div class="card">
+                <h3>GTA V</h3>
+                <p>เกม Open World สุดมันส์</p>
+                <button>Download</button>
+            </div>
+            <div class="card">
+                <h3>Elden Ring</h3>
+                <p>Action RPG สุดท้าทาย</p>
+                <button>Download</button>
+            </div>
+            <div class="card">
+                <h3>Valorant</h3>
+                <p>เกมยิง Tactical FPS</p>
+                <button>Download</button>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="topBtn">↑</button>
+
+    <footer class="footer">
+        <h3>BungJaa</h3>
+        <p>© 2026 BungJaa. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">YouTube</a>
+        </p>
+        <p>จัดทำโดย 68065549 รัฐธรรมนูญ หิรัญอร</p>
+    </footer>
+
+<script>
+    let topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+    };
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
